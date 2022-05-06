@@ -1,6 +1,7 @@
 # Menu program for Programming Final Project
 # Used with Github to ensure that students know the GitHub process.
-import os
+
+
 semester = "ITSE1479 - Spring 2022";
 
 def main():
@@ -158,16 +159,55 @@ def smileyFib(numberOfTimes):
     print()
     print()
 
-def thorneRr():
-    print("Do you want to play \"python\" roulette?/n  (Losing means your computer shuts down)")
-    if os.name == 'nt':
-      os.subprocess.run(["shutdown", "\s", "\t", "0"])
+def thorneCatDog():
+    ccchhh = input('type choice -> cat or dog?')
+    if (ccchhh== cat):
+        print("""
+                                                      
+          ██          ██                      
+        ██░░██      ██░░██                    
+        ██░░░░██████░░░░░░████████▓▓          
+      ██░░░░░░▒▒░░▒▒░░░░░░░░▒▒▒▒░░▒▒████      
+  ▓▓████░░░░░░░░░░░░░░░░░░████▒▒░░▒▒▒▒▒▒▓▓    
+  ░░░░██░░██░░░░▓▓░░░░▓▓░░░░░░░░░░░░░░░░▒▒▓▓  
+  ▓▓▓▓░░░░░░░░████▓▓░░░░░░▓▓██░░░░░░░░░░░░██  
+  ░░██░░░░░░░░░░▒▒░░░░░░░░▒▒░░░░░░░░░░░░░░▒▒██
+    ██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░██
+    ██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░██
+    ██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░██
+    ██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░██
+    ██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░██░░░░██
+    ░░██░░░░░░░░░░░░░░░░░░░░░░░░██▓▓▓▓▒▒░░▓▓  
+      ░░██░░░░░░░░░░░░░░░░░░░░██▓▓▒▒▒▒░░▓▓░░  
+        ░░▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██████████▓▓░░    
+""")
     else:
-      os.subprocess.run(["shutdown", "now"])
+        print("dog")
+    
+    
+
+import os
+import random
+
+def thorneRr():
+    cchh = input("Do you want to play \"python\" roulette?\n  (Losing means your computer shuts down) type \"yes\" to play")
+    if(cchh == 'yes'):
+        chamb = random.randint(0,100)
+        if(chamb < 16):
+            if os.name == 'nt':
+                os.system("shutdown /s /t 0")
+            else:
+                os.system("shutdown now")
+        else:
+            print("Congrats! You won.")
+    else:
+        print("solid choice!")
+        
+    
 #*****************************************************************
 # Please leave me alone,
 #   Sincerely,
 #       main()
 #*****************************************************************
-
+thorneRr()
 main()
