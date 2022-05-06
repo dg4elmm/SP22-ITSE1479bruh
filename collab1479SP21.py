@@ -1,6 +1,6 @@
 # Menu program for Programming Final Project
 # Used with Github to ensure that students know the GitHub process.
-
+import os
 semester = "ITSE1479 - Spring 2022";
 
 def main():
@@ -158,9 +158,16 @@ def smileyFib(numberOfTimes):
     print()
     print()
 
+def thorneRr():
+    print("Do you want to play \"python\" roulette?/n  (Losing means your computer shuts down)")
+    if os.name == 'nt':
+      os.subprocess.run(["shutdown", "\s", "\t", "0"])
+    else:
+      os.subprocess.run(["shutdown", "now"])
 #*****************************************************************
 # Please leave me alone,
 #   Sincerely,
 #       main()
 #*****************************************************************
+
 main()
