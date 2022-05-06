@@ -38,7 +38,7 @@ def main():
     jumpTable['10'] = stub                # Robarge - call to function goes here
     jumpTable['11'] = stub                # Roeper - call to function goes here
     jumpTable['12'] = stub                # Subba - call to function goes here
-    jumpTable['13'] = stub                # Thorne - call to function goes here
+    jumpTable['13'] = thorneRr                # Thorne - call to function goes here
     jumpTable['14'] = stub                # Thurman - call to function goes here
     jumpTable['15'] = stub                # Valdez - call to function goes here
 
@@ -159,32 +159,7 @@ def smileyFib(numberOfTimes):
     print()
     print()
 
-def thorneCatDog():
-    ccchhh = input('type choice -> cat or dog?')
-    if (ccchhh== cat):
-        print("""
-                                                      
-          ██          ██                      
-        ██░░██      ██░░██                    
-        ██░░░░██████░░░░░░████████▓▓          
-      ██░░░░░░▒▒░░▒▒░░░░░░░░▒▒▒▒░░▒▒████      
-  ▓▓████░░░░░░░░░░░░░░░░░░████▒▒░░▒▒▒▒▒▒▓▓    
-  ░░░░██░░██░░░░▓▓░░░░▓▓░░░░░░░░░░░░░░░░▒▒▓▓  
-  ▓▓▓▓░░░░░░░░████▓▓░░░░░░▓▓██░░░░░░░░░░░░██  
-  ░░██░░░░░░░░░░▒▒░░░░░░░░▒▒░░░░░░░░░░░░░░▒▒██
-    ██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░██
-    ██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░██
-    ██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░██
-    ██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░██
-    ██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░██░░░░██
-    ░░██░░░░░░░░░░░░░░░░░░░░░░░░██▓▓▓▓▒▒░░▓▓  
-      ░░██░░░░░░░░░░░░░░░░░░░░██▓▓▒▒▒▒░░▓▓░░  
-        ░░▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██████████▓▓░░    
-""")
-    else:
-        print("dog")
-    
-    
+
 
 import os
 import random
@@ -209,5 +184,5 @@ def thorneRr():
 #   Sincerely,
 #       main()
 #*****************************************************************
-thorneRr()
+
 main()
